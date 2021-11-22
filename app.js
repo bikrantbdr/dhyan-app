@@ -28,6 +28,7 @@ timeSelect.forEach(option => {
   option.addEventListener("click", function() {
     duration = this.getAttribute("data-time");
     timeDisplay.textContent = `${Math.floor(duration / 60)}:${Math.floor(duration % 60)}`;
+    
     song.currentTime = 0;
   });
 });
